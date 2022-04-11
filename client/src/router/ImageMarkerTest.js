@@ -17,26 +17,34 @@ margin-top: 1rem;
 `
 
 const Marker = styled.div`
-/* width: 100px; */
-height: 20px;
-background-color: #0286ab;
+display: flex;
 color: #fff;
+`
+
+const NumberTag = styled.div`
+background-color: #2B75EE;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
 `
 
 const sayHello = () => {
     console.log('hello')
 }
 
-// const CustomMarker = (a) => {
-//     console.log(1,a)
-//     sayHello();
-//     return (
-//         <Marker>
-//             {a.itemNumber} <input />
-//         </Marker>
+const CustomMarker = (a) => {
+    console.log(1,a)
+    sayHello();
+    return (
+        <Marker>
+            <NumberTag>{a.itemNumber}</NumberTag>
+             <input />
+        </Marker>
 
-//     )
-// }
+    )
+}
 
 
 function ImageMarkerTest() {
@@ -51,7 +59,7 @@ function ImageMarkerTest() {
         src="https://www.newsworks.co.kr/news/photo/202002/433057_327801_345.jpg"
         markers={markers}
         onAddMarker={(marker) => setMarkers((prev) => [...prev, marker])}
-        // markerComponent={CustomMarker}
+        markerComponent={CustomMarker}
         />
 
 <Btn disabled={!markers.length > 0} onClick={() => setMarkers([])}>
