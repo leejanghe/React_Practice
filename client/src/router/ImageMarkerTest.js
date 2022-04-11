@@ -3,7 +3,7 @@ import ImageMarker from 'react-image-marker'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-width: 40%;
+width: 30%;
 margin: 0 auto;
 margin-top: 3rem;
 display: flex;
