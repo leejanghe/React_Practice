@@ -5,6 +5,7 @@ import ImageMarkerTest from './router/ImageMarkerTest';
 import InputState from './router/InputState';
 import LottieTest from './router/LottieTest';
 import UseState from './router/UseState';
+import ZoomImage from './router/ZoomImage';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test4" element={<ImageMarkerTest/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test5" element={<ZoomImage/>}/>
     </Routes>
     </Router>
   );

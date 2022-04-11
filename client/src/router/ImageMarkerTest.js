@@ -21,7 +21,7 @@ margin-top: 1rem;
 function ImageMarkerTest() {
 
     const [markers, setMarkers] = useState([])
-   
+
 
     return (
         <>
@@ -30,11 +30,13 @@ function ImageMarkerTest() {
         src="https://www.newsworks.co.kr/news/photo/202002/433057_327801_345.jpg"
         markers={markers}
         onAddMarker={(marker) => setMarkers((prev) => [...prev, marker])}
-/>
+        />
 
 <Btn disabled={!markers.length > 0} onClick={() => setMarkers([])}>
         Reset
 </Btn>
+
+<div>ㅇ</div>
 
 </Wrapper>
 
