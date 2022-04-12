@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import ImageMarker from 'react-image-marker'
 import styled from 'styled-components'
+import CustomMarker from '../components/CustomMarker'
+
 
 const Wrapper = styled.div`
 width: 30%;
@@ -16,40 +18,41 @@ width: 30%;
 margin-top: 1rem;
 `
 
-const Marker = styled.div`
-display: flex;
-color: #fff;
-`
-
-const NumberTag = styled.div`
-background-color: #2B75EE;
-width: 20px;
-height: 20px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-`
-
-const sayHello = () => {
-    console.log('hello')
-}
-
-const CustomMarker = (a) => {
-    console.log(1,a)
-    sayHello();
-    return (
-        <Marker>
-            <NumberTag>{a.itemNumber}</NumberTag>
-             <input />
-        </Marker>
-
-    )
-}
 
 
-function ImageMarkerTest() {
+// const CustomMarker = (a) => {
+
+
+//     console.log(1,a)
+//     return (
+//         <>
+//         <Marker>
+//             <NumberTag>{a.itemNumber}</NumberTag>
+//         </Marker>
+//         {a.itemNumber}<input 
+//              onChange={onChange}
+//         />
+//         </>
+//     )
+// }
+
+
+function ImageMarkerTest(a) {
 
     const [markers, setMarkers] = useState([])
+    const [text, setText] = useState('')
+
+    const onChange = (e) => {
+        console.log(1,e.target.value)
+        console.log(2, markers)
+        setText(e.target.value)
+    }
+
+    const inputDelete = (id) => {
+        console.log(1,id)
+       setMarkers(markers.filter(mark => mark.id !== id))
+    }
+
 
     return (
         <>
@@ -66,8 +69,25 @@ function ImageMarkerTest() {
         Reset
 </Btn>
 
-<div>{markers.length}</div>
 
+
+    <div>
+    {
+    markers.length ===0 ?  <div>요청한게 없음</div> :
+    markers && markers.map((markers => 
+        (
+            <div key={markers.id}>
+                {markers.itemNumber}
+            <input 
+            onChange={onChange}
+            />
+            <button onClick={inputDelete}>삭제</button>
+            <button>수정</button>
+            <button>저장</button>
+            </div>
+        )
+    ))}
+    </div>
 </Wrapper>
 
     </>
