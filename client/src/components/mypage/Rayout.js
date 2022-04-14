@@ -1,12 +1,32 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function Rayout({introInfo}) {
+
+const Wrapper = styled.div`
+margin: 0 auto;
+text-align: center;
+`
+
+const JobTag = styled.div`
+/* display: flex; */
+justify-content: center;
+`
+
+
+function Rayout({introInfo,introInfo2}) {
     return (
-        <div className="designerIntroWrap">
-            <div className="reputationInfo"></div>
+        <Wrapper>
+            <JobTag>
+            {introInfo2.map(info => (
+                <>
+                <h2>{info.title}</h2>
+                <p>{info.content}</p>
+                </>
+            ))}
+            </JobTag>
             {introInfo.map(info => (
                 <>
-                <h5>{info.title}</h5>
+                <h1>{info.title}</h1>
                 <div className="infoTagWrap">
                 {info.list.map(item => (
                     <div className="roundItemTag">
@@ -16,7 +36,7 @@ function Rayout({introInfo}) {
                 </div>
                 </>
             ))}
-        </div>
+        </Wrapper>
     )
 }
 
