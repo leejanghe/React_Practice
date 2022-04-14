@@ -4,6 +4,7 @@ import Home from './router/Home';
 import ImageMarkerTest from './router/ImageMarkerTest';
 import InputState from './router/InputState';
 import LottieTest from './router/LottieTest';
+import Mypage from './router/Mypage';
 import UseState from './router/UseState';
 import ZoomImage from './router/ZoomImage';
 
@@ -31,6 +32,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test5" element={<ZoomImage/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test6" element={<Mypage/>}/>
     </Routes>
     </Router>
   );

@@ -37,6 +37,7 @@ function Navbar() {
              <Link to="/test3">lottie 애니메이션 출력</Link>
              <Link to="/test4">marker 구현</Link>
              <Link to="/test5">image zoom</Link>
+             <Link to="/test6">Mypage</Link>
         </HeaderTag>
     )
 }
