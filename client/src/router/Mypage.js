@@ -11,16 +11,16 @@ function Mypage() {
     ]
 
 
-    const introInfo2 = [
-        {title:'당신은 어떤스타일?', content:'둥글둥글합니다'},
-        {title:'아픈곳', content:'목 어깨 허리 다아파 ㅠ'},
-        {title:'무슨일하나요?', content:'프론트 개발자입니다.'},
-        {title:'키우는 동물', content:'고양이 키워요'},
+    const introText = [
+        {title:'작업가능 시간', contents:'평일 00시~00시'},
+        {title:'응답률', contents:'97%'},
+        {title:'응답시간', contents:'대체로 6시간'},
+        {title:'작업후기', contents:'★★★★☆'},
     ]
 
     return (
         <div>
-            <Rayout introInfo={introInfo} introInfo2={introInfo2}/>
+            <Rayout introInfo={introInfo} introText={introText}/>
         </div>
     )
 }
