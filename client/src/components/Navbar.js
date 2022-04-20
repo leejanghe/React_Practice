@@ -38,6 +38,7 @@ function Navbar() {
              <Link to="/test4">marker 구현</Link>
              <Link to="/test5">image zoom</Link>
              <Link to="/test6">Mypage</Link>
+             <Link to="/test7">Tabpage</Link>
         </HeaderTag>
     )
 }
