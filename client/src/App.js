@@ -1,5 +1,6 @@
 import {BrowserRouter as Router,Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
+import TabPage from './components/tab/TabPage';
 import Home from './router/Home';
 import ImageMarkerTest from './router/ImageMarkerTest';
 import InputState from './router/InputState';
@@ -35,6 +36,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test6" element={<Mypage/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test7" element={<TabPage/>}/>
     </Routes>
     </Router>
   );
