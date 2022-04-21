@@ -8,6 +8,7 @@ import LottieTest from './router/LottieTest';
 import Mypage from './router/Mypage';
 import UseState from './router/UseState';
 import ZoomImage from './router/ZoomImage';
+import Table from './components/Table';
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test7" element={<TabPage/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test8" element={<Table/>}/>
     </Routes>
     </Router>
   );

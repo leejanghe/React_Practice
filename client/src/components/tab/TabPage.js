@@ -35,7 +35,7 @@ function TabPage() {
 
     return (
         <TabWrapper>
-            <Tabcomponet obj={obj} clickevent={clickevent} setTab={setTab} tab={tab}/>
+            <Tabcomponet obj={obj} clickevent={clickevent} tab={tab}/>
         </TabWrapper>
     )
 }
