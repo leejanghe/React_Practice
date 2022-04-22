@@ -11,6 +11,7 @@ import ZoomImage from './router/ZoomImage';
 import Table from './components/Table';
 import Table2 from './components/Table2';
 import Tabtab from './components/pracitce/Tabtab';
+import UseEffectTest from './router/UseEffectTest';
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test10" element={<Tabtab/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test11" element={<UseEffectTest/>}/>
     </Routes>
     </Router>
   );

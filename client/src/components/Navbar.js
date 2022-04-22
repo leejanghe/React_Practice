@@ -42,6 +42,7 @@ function Navbar() {
              {/* <Link to="/test8">Table</Link>
              <Link to="/test9">Table2</Link> */}
              <Link to="/test10">Tab</Link>
+             <Link to="/test11">UseEffectTest</Link>
         </HeaderTag>
     )
 }

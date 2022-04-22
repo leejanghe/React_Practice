@@ -32,7 +32,7 @@ function DesignNavbar({ setActive, navs }) {
         if(target.contains('activeNav')){
             return false
         }else{
-            document.querySelectorAll('.navItem').forEach((item,idx) => {
+            document.querySelectorAll('.navItem').forEach((item) => {
                 if(item.classList.contains('activeNav')){
                     item.classList.remove('activeNav')
                 }else{

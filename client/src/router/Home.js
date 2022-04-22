@@ -62,11 +62,13 @@ function Home() {
         setError(e);
       }
       setLoading(false);
+      console.log('gg??')
     };
   
     useEffect(() => {
       fetchUsers();
-    }, []);
+      console.log('useeff')
+    },[]);
 
     // const onDelete = async (id) => {
     //     try {
