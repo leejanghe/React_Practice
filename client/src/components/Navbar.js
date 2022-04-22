@@ -40,6 +40,7 @@ function Navbar() {
              <Link to="/test6">Mypage</Link>
              <Link to="/test7">Tabpage</Link>
              <Link to="/test8">Table</Link>
+             <Link to="/test9">Table2</Link>
         </HeaderTag>
     )
 }
