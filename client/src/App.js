@@ -10,6 +10,7 @@ import UseState from './router/UseState';
 import ZoomImage from './router/ZoomImage';
 import Table from './components/Table';
 import Table2 from './components/Table2';
+import Tabtab from './components/pracitce/Tabtab';
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test9" element={<Table2/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test10" element={<Tabtab/>}/>
     </Routes>
     </Router>
   );
