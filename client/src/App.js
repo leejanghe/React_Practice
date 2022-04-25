@@ -12,6 +12,7 @@ import Table from './components/Table';
 import Table2 from './components/Table2';
 import Tabtab from './components/pracitce/Tabtab';
 import UseEffectTest from './router/UseEffectTest';
+import Debuger from './router/Debuger';
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test11" element={<UseEffectTest/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test12" element={<Debuger/>}/>
     </Routes>
     </Router>
   );

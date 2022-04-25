@@ -34,15 +34,16 @@ function Navbar() {
              <Link to="/">Api 요청하기</Link>
              <Link to="/test1">useState</Link>
              <Link to="/test2">input 상태관리</Link>
-             {/* <Link to="/test3">lottie 애니메이션 출력</Link> */}
+             <Link to="/test3">lottie 애니메이션 출력</Link>
              <Link to="/test4">marker 구현</Link>
-             {/* <Link to="/test5">image zoom</Link> */}
-             {/* <Link to="/test6">Mypage</Link> */}
-             {/* <Link to="/test7">Tabpage</Link> */}
-             {/* <Link to="/test8">Table</Link>
-             <Link to="/test9">Table2</Link> */}
+             <Link to="/test5">image zoom</Link>
+             <Link to="/test6">Mypage</Link>
+             <Link to="/test7">Tabpage</Link>
+             <Link to="/test8">Table</Link>
+             <Link to="/test9">Table2</Link>
              <Link to="/test10">Tab</Link>
              <Link to="/test11">UseEffectTest</Link>
+             <Link to="/test12">DebugerTest</Link>
         </HeaderTag>
     )
 }
