@@ -13,6 +13,7 @@ import Table2 from './components/Table2';
 import Tabtab from './components/pracitce/Tabtab';
 import UseEffectTest from './router/UseEffectTest';
 import Debuger from './router/Debuger';
+import StyleClassTest from './router/StyleClassTest';
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test12" element={<Debuger/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test13" element={<StyleClassTest/>}/>
     </Routes>
     </Router>
   );
