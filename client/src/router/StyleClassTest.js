@@ -63,12 +63,12 @@ padding:1rem;
     border-radius: 1rem;
     width:100px;
     margin:auto;
-    .redfont {
+    /* .redfont {
     color:green;
     background-color:red;
     border-radius: 1rem;
     width:100px;
-    }
+    } */
 }  
 &:last-child{
     color:#48BEDF;
@@ -77,6 +77,13 @@ padding:1rem;
   }
 }
 `
+
+
+const Testbtn = styled.button`
+background-color: yellow;
+color:blue;
+`
+
 
 function StyleClassTest() {
 
@@ -120,6 +127,7 @@ function StyleClassTest() {
       }
       </div>
     </InerForm>
+    <Testbtn>나는 버튼이ㅑㅇㅁ</Testbtn>
     </WrapForm>
   )
 }
