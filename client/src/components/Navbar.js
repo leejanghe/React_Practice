@@ -45,6 +45,7 @@ function Navbar() {
              <Link to="/test11">UseEffectTest</Link>
              <Link to="/test12">DebugerTest</Link>
              <Link to="/test13">StyleClassTest</Link>
+             <Link to="/test14">Redux test</Link>
         </HeaderTag>
     )
 }

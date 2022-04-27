@@ -14,6 +14,7 @@ import Tabtab from './components/pracitce/Tabtab';
 import UseEffectTest from './router/UseEffectTest';
 import Debuger from './router/Debuger';
 import StyleClassTest from './router/StyleClassTest';
+import Reduxtest from './router/Reduxtest';
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test13" element={<StyleClassTest/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test14" element={<Reduxtest/>}/>
     </Routes>
     </Router>
   );
