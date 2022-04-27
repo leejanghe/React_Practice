@@ -15,6 +15,7 @@ import UseEffectTest from './router/UseEffectTest';
 import Debuger from './router/Debuger';
 import StyleClassTest from './router/StyleClassTest';
 import Reduxtest from './router/Reduxtest';
+import Detail from './components/redux/Detail';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test14" element={<Reduxtest/>}/>
+      <Route path="test14/:id" element={<Detail/>}/>
     </Routes>
     </Router>
   );

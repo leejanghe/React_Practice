@@ -1,9 +1,10 @@
 import React from 'react'
+import Home from '../components/redux/Home'
 
 function Reduxtest() {
     return (
         <div>
-            redux 연습
+            <Home />
         </div>
     )
 }
