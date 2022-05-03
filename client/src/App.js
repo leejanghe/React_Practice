@@ -67,10 +67,10 @@ function App() {
     <Routes>
       <Route path="test13" element={<StyleClassTest/>}/>
     </Routes>
-    <Routes>
+    {/* <Routes>
       <Route path="test14" element={<Reduxtest/>}/>
       <Route path="test14/:id" element={<Detail/>}/>
-    </Routes>
+    </Routes> */}
     <Routes>
       <Route path="test15" element={<Tooltip/>}/>
     </Routes>
