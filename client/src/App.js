@@ -16,6 +16,7 @@ import Debuger from './router/Debuger';
 import StyleClassTest from './router/StyleClassTest';
 import Reduxtest from './router/Reduxtest';
 import Detail from './components/redux/Detail';
+import Tooltip from './router/Tooltip';
 
 function App() {
   return (
@@ -69,6 +70,9 @@ function App() {
     <Routes>
       <Route path="test14" element={<Reduxtest/>}/>
       <Route path="test14/:id" element={<Detail/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test15" element={<Tooltip/>}/>
     </Routes>
     </Router>
   );
