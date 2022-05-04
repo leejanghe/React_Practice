@@ -44,7 +44,7 @@ function DesignNavbar({ setActive, navs }) {
             setActive(target[1])
         }
     }
-
+    // console.log(1,navs.title)
     return (
         <DetailNavTag>
             {navs.map((item, idx) => (
