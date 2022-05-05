@@ -42,10 +42,10 @@ function Navbar() {
              <Link to="/test8">Table</Link>
              <Link to="/test9">Table2</Link>
              <Link to="/test10">Tab</Link>
-             <Link to="/test11">UseEffectTest</Link>
-             <Link to="/test12">DebugerTest</Link>
+             {/* <Link to="/test11">UseEffectTest</Link>
+             <Link to="/test12">DebugerTest</Link> */}
              <Link to="/test13">StyleClassTest</Link>
-             <Link to="/test14">Redux test</Link>
+             {/* <Link to="/test14">Redux test</Link> */}
              <Link to="/test15">tooltip</Link>
         </HeaderTag>
     )
