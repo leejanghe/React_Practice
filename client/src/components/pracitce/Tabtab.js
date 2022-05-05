@@ -15,6 +15,11 @@ font-weight:700;
 font-size:1.3rem;
 color:#333333;
 margin-top: 2rem;
+
+.backgroundNav{
+    color: red;
+    background-color: yellow;
+}
 `
 
 
@@ -43,17 +48,22 @@ const navs = [
         }else if(active==='3'){
             setShowWork(true)
         }
+        console.log('useEffect')
     },[active])
 
-    console.log(1,navs[0].title)
-
+    // console.log(1,navs[0].title)
+    console.log('어떤반응?')
   return (
       <>
       <DetailLayout>
           <MainttextTag>
-          {
+              <div className="backgroundNav">
+              메뉴 &nbsp;&gt;&nbsp;{
             navs[active-1].title
           }
+            
+            </div>
+          
           </MainttextTag>
       <DesignNavbar
       setActive={setActive} 
@@ -62,7 +72,7 @@ const navs = [
       />
       {showRequest&& <DetailReq/>}
       {showPayment&& <DetailPay/>}
-      {showWork&& <DetailWork/>}
+      {showWork&& <DetailWork navs={navs}/>}
       </DetailLayout>
       </>
   )
