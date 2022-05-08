@@ -24,6 +24,7 @@ function DetailWork({navs}) {
         <Table2 />
         <h1>아래 클릭하면 텝메뉴를 사라지게 해보자!</h1>
         <button onClick={(e)=>{closeTab()}}>click me!</button>
+        <button>뒤로 가기 버튼!</button>
         </>
     )
 }
