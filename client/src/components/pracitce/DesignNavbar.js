@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const DetailNavTag =styled.div`
+export const DetailNavTag =styled.div`
   font-weight: bold;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
