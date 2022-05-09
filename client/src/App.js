@@ -17,6 +17,7 @@ import StyleClassTest from './router/StyleClassTest';
 import Reduxtest from './router/Reduxtest';
 import Detail from './components/redux/Detail';
 import Tooltip from './router/Tooltip';
+import Ajaxreq from './router/Ajaxreq';
 
 function App() {
   return (
@@ -73,6 +74,9 @@ function App() {
     </Routes> */}
     <Routes>
       <Route path="test15" element={<Tooltip/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test16" element={<Ajaxreq/>}/>
     </Routes>
     </Router>
   );
