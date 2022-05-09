@@ -7,27 +7,39 @@ function Ajaxreq() {
 
 
     useEffect(() => {
-        axios.get('https://codingapple1.github.io/shop/data2.json')
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
         .then(data => {
             setData(data.data)
             console.log(data)
         })
-    } , [])
-
-    const handleClick = () => {
-        setData([...data, {name: '새로운 상품'}])
-    }
-
-    // {id: 3, title: 'Flowey', content: 'only 5 inches', price: 120000}
+    } , [])    
+       
+        const handleClick = async () => {
+                axios.post("https://jsonplaceholder.typicode.com/posts", {
+                    title: '드디어 해결!!',
+                    body: '저는 실험용입니다!!',
+                    userId: '안녕하세요!!!',
+                    id:101
+                })
+                .then(function (response) {
+                     console.log(response);
+                     let copy = [...data, {...response.data}]
+                     setData(copy)
+                }).catch(function (error) {
+                    console.log(1,error);
+                })
+                
+        }
+    
     return (
         <div>
-            <button onClick={handleClick}>클릭!</button>
+            <button onClick={(e)=>handleClick(e)}>클릭!</button>
             {
-                data.map(item => <div>
-                    <span>{item.id}</span>
+                data.map(item => 
+                <div key={item.id}>
+                    <span>{item.userId}</span>
                     <span>{item.title}</span>
-                    <span>{item.content}</span>
-                    <span>{item.price}</span>
+                    <span>{item.body}</span>
                 </div>)
             }
         </div>
