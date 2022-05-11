@@ -48,6 +48,7 @@ function Navbar() {
              {/* <Link to="/test14">Redux test</Link> */}
              <Link to="/test15">tooltip</Link>
              <Link to="/test16">ajax</Link>
+             <Link to="/test17">testUI</Link>
         </HeaderTag>
     )
 }

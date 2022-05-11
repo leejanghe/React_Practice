@@ -27,9 +27,10 @@ function Ajaxreq() {
                      setData(copy)
                 }).catch(function (error) {
                     console.log(1,error);
-                })
-                
+                })      
         }
+
+        
     
     return (
         <div>

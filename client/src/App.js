@@ -18,6 +18,7 @@ import Reduxtest from './router/Reduxtest';
 import Detail from './components/redux/Detail';
 import Tooltip from './router/Tooltip';
 import Ajaxreq from './router/Ajaxreq';
+import StatusValue from './router/StatusValue';
 
 function App() {
   return (
@@ -77,6 +78,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test16" element={<Ajaxreq/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test17" element={<StatusValue/>}/>
     </Routes>
     </Router>
   );
