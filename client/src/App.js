@@ -19,6 +19,7 @@ import Detail from './components/redux/Detail';
 import Tooltip from './router/Tooltip';
 import Ajaxreq from './router/Ajaxreq';
 import StatusValue from './router/StatusValue';
+import Pushdata from './router/Pushdata';
 
 function App() {
   return (
@@ -81,6 +82,9 @@ function App() {
     </Routes>
     <Routes>
       <Route path="test17" element={<StatusValue/>}/>
+    </Routes>
+    <Routes>
+      <Route path="test18" element={<Pushdata/>}/>
     </Routes>
     </Router>
   );

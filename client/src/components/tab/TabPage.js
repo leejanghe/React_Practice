@@ -28,7 +28,8 @@ function TabPage() {
     
     const clickevent = (e) => {
         setTab({active:e})
-        console.log(e)
+        console.log(e.target.value)
+        document.querySelector('li').style.background ="red"
     }
 
 
