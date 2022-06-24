@@ -30,8 +30,9 @@ const HeaderTag = styled.div`
 
 function Navbar() {
     return (
+        <>
         <HeaderTag>
-             <Link to="/">Api 요청하기</Link>
+             <Link to="/test">Api 요청하기</Link>
              <Link to="/test1">useState</Link>
              <Link to="/test2">input 상태관리</Link>
              <Link to="/test3">lottie 애니메이션 출력</Link>
@@ -50,7 +51,8 @@ function Navbar() {
              <Link to="/test16">ajax</Link>
              <Link to="/test17">testUI</Link>
              <Link to="/test18">PushData</Link>
-        </HeaderTag>
+         </HeaderTag>
+        </>
     )
 }
 

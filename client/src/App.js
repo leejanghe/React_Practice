@@ -1,7 +1,7 @@
 import {BrowserRouter as Router,Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import TabPage from './components/tab/TabPage';
-import Home from './router/Home';
+// import Home from './router/Home';
 import ImageMarkerTest from './router/ImageMarkerTest';
 import InputState from './router/InputState';
 import LottieTest from './router/LottieTest';
@@ -21,13 +21,20 @@ import Ajaxreq from './router/Ajaxreq';
 import StatusValue from './router/StatusValue';
 import Pushdata from './router/Pushdata';
 
+import Home from './router/Rending/Home'
+
 function App() {
   return (
     <Router>
-      <Navbar />
-    <Routes>
+      {/* <Navbar /> */}
+      <Routes>
       <Route path="/" element={<Home/>}/>
     </Routes>
+
+
+    {/* <Routes>
+      <Route path="test" element={<Home/>}/>
+    </Routes> */}
 
     <Routes>
       <Route path="test1" element={<UseState/>}/>
